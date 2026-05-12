@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+  <title>Cadeira Qbrada</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+  <img src="img/cadeira.jpeg" alt="Cadeira Qbrada" />
+</div>
+  <ul class="nav-links">
+    <li><a href="#catalog">Produtos</a></li>
+    <li><a href="#services">Serviços</a></li>
+    <li><a href="#why">Avaliações</a></li>
+    <li><a href="#faq">FAQ</a></li>
+   
+  </ul>
+  <div class="nav-right">
+    
+    
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- BOTÃO -->
+<a href="https://wa.me/555484421304" target="_blank" class="btn-link">
+  <button class="btn-whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
+    Falar no WhatsApp
+  </button>
+</a>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Cadeiras de qualidade com<br><span>preços incríveis.</span></h1>
+    <p class="hero-sub">PARCELAMENTO FACILITADO, ENTREGA GRÁTIS EM ERECHIM. E O MELHOR FRETE PRA REGIÃO.</p>
+    <div class="hero-btns">
+     <button class="btn-pink" onclick="document.getElementById('catalog').scrollIntoView({behavior:'smooth'})">
+  Ver catálogo →
+</button>
+
+<a href="https://wa.me/555484421304" target="_blank" class="btn-link">
+  <button class="btn-green">
+    <i class="fa-brands fa-whatsapp"></i>
+    Comprar agora
+  </button>
+</a> 
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <span class="icon">👥</span>
+        <div>
+          <div class="stat-val">600+</div>
+          <div class="stat-label">Clientes satisfeitos</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="icon">⭐</span>
+        <div>
+          <div class="stat-val">5.0★</div>
+          <div class="stat-label">Em avaliações</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FREIGHT -->
+<section id="freight">
+  <div style="text-align:center; margin-bottom:2.5rem;">
+    <div class="section-tag" style="display:inline-flex;">💳 Parcelamento no cartão</div>
+    <h2 class="section-title">Melhor frete da região</h2>
+    <p class="section-sub">Logística rápida e segura para sua nova cadeira chegar perfeita</p>
+  </div>
+  <div class="freight-grid">
+    <div class="freight-card active" onclick="setFreight(this)">
+      <div class="freight-icon">🚚</div>
+      <div class="freight-name">Erechim</div>
+      <div class="freight-desc">Frete GRÁTIS em toda a cidade</div>
+    </div>
+    <div class="freight-card" onclick="setFreight(this)">
+      <div class="freight-icon">🚚</div>
+      <div class="freight-name">Concórdia</div>
+      <div class="freight-desc">Frete com preço especial</div>
+    </div>
+    <div class="freight-card" onclick="setFreight(this)">
+      <div class="freight-icon">🚚</div>
+      <div class="freight-name">Chapecó</div>
+      <div class="freight-desc">Frete com preço especial</div>
+    </div>
+    <div class="freight-card" onclick="setFreight(this)">
+      <div class="freight-icon">🚚</div>
+      <div class="freight-name">Passo Fundo</div>
+      <div class="freight-desc">Frete com preço especial</div>
+    </div>
+  </div>
+  <div class="anos-banner">
+  <div class="anos-esquerda">
+    <div class="anos-numero">23</div>
+    <div>
+      <div class="anos-titulo">anos de mercado</div>
+      <div class="anos-sub">Atendendo RS • SC • PR</div>
+    </div>
+  </div>
+
+  <div class="anos-stats">
+    <div class="anos-stat">
+      <div class="anos-stat-val">600+</div>
+      <div class="anos-stat-label">Clientes atendidos</div>
+    </div>
+    <div class="anos-divider"></div>
+    <div class="anos-stat">
+      <div class="anos-stat-val">3</div>
+      <div class="anos-stat-label">Estados atendidos</div>
+    </div>
+    <div class="anos-divider"></div>
+    <div class="anos-stat">
+      <div class="anos-stat-val">5★</div>
+      <div class="anos-stat-label">Em avaliações</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- EQUIPE -->
+<section id="equipe">
+  <div class="equipe-bg"></div>
+  <div class="equipe-container">
+
+    <div class="equipe-foto-wrap">
+      <img src="img/equipe.jpeg" alt="André e Liciane" class="equipe-foto" />
+    </div>
+
+    <div class="equipe-texto">
+      <span class="section-tag" style="display:inline-flex;">👥 Quem está por trás</span>
+      <h2 class="equipe-titulo">André & Liciane</h2>
+      <p class="equipe-cargo">Fundadores da Cadeira Qbrada</p>
+
+      <p class="equipe-desc">Com mais de <strong>23 anos de experiência</strong> no mercado de cadeiras, André e Liciane construíram a Cadeira Qbrada com dedicação, conhecimento técnico e amor pelo que fazem.</p>
+
+      <p class="equipe-desc">Especializados em conserto, estofaria, manutenção e venda de cadeiras novas e seminovas, eles atendem empresas e residências em todo o sul do Brasil — RS, SC e PR.</p>
+
+      <p class="equipe-desc">O compromisso deles é simples: <strong>entregar qualidade com o melhor preço da região.</strong></p>
+
+      <div class="equipe-contatos">
+        <a href="https://wa.me/5554984421304" target="_blank" class="equipe-contato">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div>
+            <span class="equipe-contato-nome">André</span>
+            <span class="equipe-contato-num">(54) 98442-1304</span>
+          </div>
+        </a>
+        <a href="https://wa.me/5554996180776" target="_blank" class="equipe-contato">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div>
+            <span class="equipe-contato-nome">Liciane</span>
+            <span class="equipe-contato-num">(54) 99618-0776</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- CATALOG -->
+<section id="catalog">
+  <h2 class="section-title">Nosso Catálogo</h2>
+  <p class="section-sub">Encontre a cadeira ideal para o seu setup ou escritório</p>
+  <div class="filter-tabs">
+    <button class="tab active" data-filter="all">Todas</button>
+    <button class="tab" data-filter="gamer">Gamer</button>
+    <button class="tab" data-filter="escritorio">Escritório</button>
+    <button class="tab" data-filter="seminova">Seminovas</button>
+  </div>
+  <div class="products-grid" id="products-grid">
+    <!-- cards inserted by JS -->
+  </div>
+
+  <div style="padding: 4rem 0 0;">
+  <div class="cta-novo">
+
+    <div class="cta-novo-topo">
+      <span class="cta-novo-tag">🏆 Por que nos escolher?</span>
+      <h2 class="cta-novo-titulo">Tudo que você precisa<br><span>em um só lugar</span></h2>
+      <p class="cta-novo-sub">Do básico ao premium, novos ou restaurados — atendemos todo o sul do Brasil</p>
+    </div>
+
+    <div class="cta-novo-grid">
+
+      <div class="cta-novo-card grande">
+        <img src="img/cadeiraobesa.jpeg" alt="Linha completa" />
+        <div class="cta-novo-card-overlay">
+          <span class="cta-novo-card-tag">Linha Completa</span>
+          <h3>Do básico até cadeiras <mark>obesas</mark> e ergonômicas <mark>NR 17</mark></h3>
+        </div>
+      </div>
+
+      <div class="cta-novo-card">
+        <img src="img/restaurada .png" alt="Novas e restauradas" />
+        <div class="cta-novo-card-overlay">
+          <span class="cta-novo-card-tag">✨ Novas & Restauradas</span>
+          <h3>Revisadas com <mark>garantia</mark></h3>
+        </div>
+      </div>
+
+      <div class="cta-novo-card">
+        <img src="img/pecas  (1).jpg" alt="Manutenção no local" />
+        <div class="cta-novo-card-overlay">
+          <span class="cta-novo-card-tag">🔧 Manutenção no Local</span>
+          <h3>Pistões, rodas e aranhas na <mark>sua casa</mark></h3>
+        </div>
+      </div>
+
+      <div class="cta-novo-card">
+        <img src="img/mapa (1).png" alt="3 estados" />
+        <div class="cta-novo-card-overlay">
+          <span class="cta-novo-card-tag">🗺️ Cobertura Regional</span>
+          <h3>Vendas para <mark>RS, SC e PR</mark></h3>
+        </div>
+      </div>
+
+      <div class="cta-novo-card">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=80" alt="Escritório" />
+        <div class="cta-novo-card-overlay">
+          <span class="cta-novo-card-tag">🏢 Corporativo</span>
+          <h3>Soluções para <mark>empresas</mark> e home office</h3>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cta-novo-rodape">
+      <a href="https://wa.me/555484421304" target="_blank" class="btn-link">
+        <button class="btn-pink" style="padding: 1rem 2.5rem; font-size: 1rem;">
+          <i class="fa-brands fa-whatsapp"></i> Quero fazer meu orçamento
+        </button>
+      </a>
+      <p>Atendimento de segunda a sábado, das 8h às 18h</p>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+</div>
+</section>
+
+<!-- CLIENTES -->
+<section id="clientes">
+  <div style="text-align:center; margin-bottom:2.5rem;">
+    <span class="section-tag" style="display:inline-flex;">🤝 Quem confia em nós</span>
+    <h2 class="section-title">Nossos principais clientes</h2>
+    <p class="section-sub">Empresas e instituições que escolheram a Cadeira Qbrada</p>
+  </div>
+
+  <div class="carrosel-wrapper">
+    <div class="carrosel-track">
+      <!-- duplicado para loop infinito -->
+      <div class="cliente-card"><img src="img/peccin.png" alt="Peccin"/><span>Peccin</span></div>
+      <div class="cliente-card"><img src="img/berbau.png" alt="Berbau"/><span>Berbau</span></div>
+      <div class="cliente-card"><img src="img/brastelha.png" alt="Brastelha"/><span>Brastelha</span></div>
+      <div class="cliente-card"><img src="img/lbn.png" alt="LBN Pré Moldados"/><span>LBN Pré Moldados</span></div>
+      <div class="cliente-card"><img src="img/hospital-de-caridade.png" alt="Hospital Caridade"/><span>Hospital Caridade</span></div>
+      <div class="cliente-card"><img src="img/unimed.png" alt="Hospital Unimed"/><span>Hospital Unimed</span></div>
+      <div class="cliente-card"><img src="img/intecnial.png" alt="Intecnial"/><span>Intecnial</span></div>
+      <div class="cliente-card"><img src="img/corsan.png" alt="Corsan"/><span>Corsan</span></div>
+      <div class="cliente-card"><img src="img/master.png" alt="Master"/><span>Master</span></div>
+      <div class="cliente-card"><img src="img/economico.png" alt="Econômico"/><span>Econômico</span></div>
+      <div class="cliente-card"><img src="img/cassul.png" alt="Casul"/><span>Casul</span></div>
+      <div class="cliente-card"><img src="img/bigsafra.png" alt="Big Safra"/><span>Big Safra</span></div>
+      <div class="cliente-card"><img src="img/senac.png" alt="Senac"/><span>Senac</span></div>
+      <div class="cliente-card"><img src="img/sesi.png" alt="Sesi"/><span>Sesi</span></div>
+      <div class="cliente-card"><img src="img/chevrolet.png" alt="Chevrolet"/><span>Chevrolet</span></div>
+      <div class="cliente-card"><img src="img/fiat.png" alt="Fiat"/><span>Fiat</span></div>
+
+      <!-- cópia para loop infinito -->
+      <div class="cliente-card"><img src="img/peccin.png" alt="Peccin"/><span>Peccin</span></div>
+      <div class="cliente-card"><img src="img/berbau.png" alt="Berbau"/><span>Berbau</span></div>
+      <div class="cliente-card"><img src="img/brastelha.png" alt="Brastelha"/><span>Brastelha</span></div>
+      <div class="cliente-card"><img src="img/lbn.png" alt="LBN Pré Moldados"/><span>LBN Pré Moldados</span></div>
+      <div class="cliente-card"><img src="img/hospital-de-caridade.png" alt="Hospital Caridade"/><span>Hospital Caridade</span></div>
+      <div class="cliente-card"><img src="img/unimed.png" alt="Hospital Unimed"/><span>Hospital Unimed</span></div>
+      <div class="cliente-card"><img src="img/intecnial.png" alt="Intecnial"/><span>Intecnial</span></div>
+      <div class="cliente-card"><img src="img/corsan.png" alt="Corsan"/><span>Corsan</span></div>
+      <div class="cliente-card"><img src="img/master.png" alt="Master"/><span>Master</span></div>
+      <div class="cliente-card"><img src="img/economico.png" alt="Econômico"/><span>Econômico</span></div>
+      <div class="cliente-card"><img src="img/cassul.png" alt="Casul"/><span>Casul</span></div>
+      <div class="cliente-card"><img src="img/bigsafra.png" alt="Big Safra"/><span>Big Safra</span></div>
+      <div class="cliente-card"><img src="img/senac.png" alt="Senac"/><span>Senac</span></div>
+      <div class="cliente-card"><img src="img/sesi.png" alt="Sesi"/><span>Sesi</span></div>
+      <div class="cliente-card"><img src="img/chevrolet.png" alt="Chevrolet"/><span>Chevrolet</span></div>
+      <div class="cliente-card"><img src="img/fiat.png" alt="Fiat"/><span>Fiat</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- STORES -->
+<section class="stores-grid">
+
+  <!-- LOJA 2 -->
+  <div class="store-card">
+
+    <img src="img/loja2.jpeg" alt="Loja 2" class="store-img">
+
+    <div class="store-content">
+      <div class="store-header">
+        <div class="store-icon">📍</div>
+        <div class="store-name">Loja 2 - Oficial</div>
+      </div>
+
+      <p class="store-desc">
+         Visite também nossa segunda unidade com opções exclusivas e pronta entrega.     
+      
+      <a href="https://share.google/2PJ9iFRatIfULNgza" target="_blank">
+        <button class="btn-store">
+          <span class="ico">➤</span>
+          Ir para loja
+        </button>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- LOJA 1 -->
+  <div class="store-card">
+
+    <img src="img/loja 1.jpeg" alt="Loja 1" class="store-img">
+
+    <div class="store-content">
+      <div class="store-header">
+        <div class="store-icon">📍</div>
+        <div class="store-name">Loja 1</div>
+      </div>
+
+      <p class="store-desc">
+        Nossa loja oficial com o melhor atendimento e showroom completo de cadeiras.
+      </p>
+
+      <a href="https://share.google/vXlR2zGSkrf7rfxeg" target="_blank">
+        <button class="btn-store">
+          <span class="ico">➤</span>
+          Ir para loja
+        </button>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2 class="section-title">Serviços Complementares</h2>
+  <p class="section-sub">Além da venda, oferecemos suporte completo para sua cadeira</p>
+  <div class="services-grid">
+  <div class="service-card">
+    <div class="service-img-wrap">
+      <img src="img/conserto .jpg" alt="Conserto de Cadeiras" class="service-img" />
+    </div>
+    <div class="service-body">
+      <div class="service-ico">🔧</div>
+      <div class="service-name">Conserto de Cadeiras</div>
+      <p class="service-desc">Sua cadeira quebrou? Consertamos em 24h. Trocamos pistão, base, rodinhas e braços com peças originais e garantia.</p>
+      <a class="link-pink" href="https://wa.me/555484421304?text=Olá%2C%20gostaria%20de%20mais%20informações%20sobre%20os%20consertos." target="_blank">Saiba mais →</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-img-wrap">
+      <img src="img/e.s.c.jpg" alt="Linha Escritório, Sala e Cozinha" class="service-img" />
+    </div>
+    <div class="service-body">
+      <div class="service-ico">🪑</div>
+      <div class="service-name">Escritório, Sala e Cozinha</div>
+      <p class="service-desc">Consertamos cadeiras de todos os ambientes — do escritório corporativo até a sala de jantar e cozinha. Qualquer modelo, qualquer problema.</p>
+      <a class="link-pink" href="https://wa.me/555484421304?text=Olá%2C%20gostaria%20de%20informações%20sobre%20conserto%20de%20cadeiras." target="_blank">Saiba mais →</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-img-wrap">
+      <img src="img/manutencao.jpg" alt="Manutenção Preventiva" class="service-img" />
+    </div>
+    <div class="service-body">
+      <div class="service-ico">🛡️</div>
+      <div class="service-name">Manutenção Preventiva</div>
+      <p class="service-desc">Mantenha sua cadeira em perfeito estado. Realizamos lubrificação, ajustes e inspeção completa para prolongar a vida útil.</p>
+      <a class="link-pink" href="https://wa.me/555484421304?text=Olá%2C%20gostaria%20de%20mais%20informações%20sobre%20a%20manutenção." target="_blank">Saiba mais →</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-img-wrap">
+      <img src="img/estofaria.jpg" alt="Estofaria Completa" class="service-img" />
+    </div>
+    <div class="service-body">
+      <div class="service-ico">🧵</div>
+      <div class="service-name">Estofaria Completa</div>
+      <p class="service-desc">Renovamos o estofamento da sua cadeira com tecidos e couros de alta qualidade. Sua cadeira fica como nova com o acabamento que você escolher.</p>
+      <a class="link-pink" href="https://wa.me/555484421304?text=Olá%2C%20gostaria%20de%20informações%20sobre%20estofaria." target="_blank">Saiba mais →</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- HOW TO BUY -->
+<section id="how">
+  <h2 class="section-title">Como comprar</h2>
+  <p class="section-sub">Processo simples, rápido e 100% seguro</p>
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-num">01</div>
+      <div class="step-ico">🖱️</div>
+      <div class="step-divider"></div>
+      <div class="step-name">Escolha sua cadeira</div>
+      <p class="step-desc">Navegue pelo nosso catálogo e encontre o modelo perfeito para sua necessidade.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">02</div>
+      <div class="step-ico">💬</div>
+      <div class="step-divider"></div>
+      <div class="step-name">Confirme a compra</div>
+      <p class="step-desc">Envie uma mensagem via WhatsApp para confirmar disponibilidade e pagamento.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">03</div>
+      <div class="step-ico">🚚</div>
+      <div class="step-divider"></div>
+      <div class="step-name">Receba em casa</div>
+      <p class="step-desc">Logística rápida e segura em toda a região metropolitana.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">04</div>
+      <div class="step-ico">🛡️</div>
+      <div class="step-divider"></div>
+      <div class="step-name">Aproveite</div>
+      <p class="step-desc">Desfrute do seu novo conforto com garantia de até 12 meses em nossos produtos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <h2 class="section-title">Por que escolher nossa empresa?</h2>
+  <p class="section-sub">Nosso compromisso é entregar o melhor produto com o melhor serviço</p>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-ico">🏆</div>
+      <div class="why-name">Qualidade</div>
+      <p class="why-desc">Cadeiras de marcas reconhecidas e materiais de alta durabilidade.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-ico">🏷️</div>
+      <div class="why-name">Preço</div>
+      <p class="why-desc">Melhor custo-benefício da região com preços imbatíveis.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-ico">📦</div>
+      <div class="why-name">Variedade</div>
+      <p class="why-desc">Amplo catálogo: Gamer, escritório, ergonômicas e seminovas.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-ico">🚚</div>
+      <div class="why-name">Entrega</div>
+      <p class="why-desc">Logística eficiente com entrega rápida em até 48h na sua porta.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PARCEIROS -->
+<section id="parceiros">
+  <div style="text-align:center; margin-bottom:3rem;">
+    <span class="section-tag" style="display:inline-flex;">🏭 Quem está por trás da qualidade</span>
+    <h2 class="section-title">Nossas marcas parceiras</h2>
+    <p class="section-sub">Trabalhamos com as melhores fabricantes do Brasil para garantir durabilidade e conforto real</p>
+  </div>
+
+  <div class="parceiros-grid">
+
+    <div class="parceiro-card">
+      <div class="parceiro-img-wrap">
+        <img src="img/cavaletti2.png" alt="Cavaletti" class="parceiro-logo" />
+        <div class="parceiro-overlay"></div>
+      </div>
+      <div class="parceiro-body">
+        <div class="parceiro-badge">Parceiro Oficial</div>
+        <h3 class="parceiro-name">Cavaletti</h3>
+        <p class="parceiro-desc">Uma das maiores fabricantes de móveis corporativos do Brasil, a Cavaletti é referência em design, ergonomia e durabilidade. Cada cadeira é projetada para o máximo conforto em longas jornadas.</p>
+        <div class="parceiro-tags">
+          <span>Ergonomia</span>
+          <span>Design Premium</span>
+          <span>Garantia de Fábrica</span>
+        </div>
+        <a href="https://www.cavaletti.com.br/" target="_blank" class="parceiro-link">
+          Conheça a Cavaletti →
+        </a>
+      </div>
+    </div>
+
+    <div class="parceiro-card">
+      <div class="parceiro-img-wrap">
+        <img src="img/plaxmetal.png" alt="Plaxmetal" class="parceiro-logo" />
+        <div class="parceiro-overlay"></div>
+      </div>
+      <div class="parceiro-body">
+        <div class="parceiro-badge">Parceiro Oficial</div>
+        <h3 class="parceiro-name">Plaxmetal</h3>
+        <p class="parceiro-desc">Especialista em cadeiras operacionais, executivas e cavaletes, a Plaxmetal combina tecnologia e resistência em cada produto. Peças robustas feitas para durar e performar.</p>
+        <div class="parceiro-tags">
+          <span>Alta Resistência</span>
+          <span>Tecnologia Nacional</span>
+          <span>Certificação ABNT</span>
+        </div>
+        <a href="https://plaxmetal.com/" target="_blank" class="parceiro-link">
+          Conheça a Plaxmetal →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="faq-header">
+    <h2>Perguntas frequentes</h2>
+    <p>Tire suas dúvidas sobre nossos serviços</p>
+  </div>
+
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Qual é o tempo de conserto?
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          O prazo médio é de 24h a 72h dependendo do tipo de manutenção e disponibilidade das peças.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Vocês fazem manutenção preventiva?
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          Sim. Realizamos lubrificação, ajustes e revisão completa para aumentar a vida útil da cadeira.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Vendem cadeiras seminovas?
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          Sim. Trabalhamos com cadeiras seminovas revisadas e em ótimo estado.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Fazem entrega?
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          Sim. Entregamos em Erechim e região com frete rápido e seguro.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+       <div class="nav-logo">
+  <img src="img/footer.jpeg" alt="Cadeira Qbrada"/>
+</div>
+      <p>Cadeiras gamer, escritório novas e seminovas com a melhor qualidade e entrega rápida na região.</p>
+      <div class="social-btns">
+
+  <a href="https://www.instagram.com/cadeiraqbrada/" target="_blank" class="social-btn">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/cadeiraquebrada.manutencao" target="_blank" class="social-btn">
+  <i class="fa-brands fa-facebook"></i>
+</a>
+
+  <a href="https://wa.me/555484421304" target="_blank" class="social-btn">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+</div>
+    </div>
+    <div class="footer-col">
+      <h4>Nossas Lojas</h4>
+      <div class="footer-store">
+        <span class="loc-ico">📍</span>
+        <div>
+          <div class="footer-store-name">Loja Oficial</div>
+          <div class="footer-store-sub">Visite nosso showroom principal</div>
+        </div>
+      </div>
+      <div class="footer-store">
+        <span class="loc-ico">📍</span>
+        <div>
+          <div class="footer-store-name">Loja 2</div>
+          <div class="footer-store-sub">Nossa segunda unidade</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <ul class="footer-links">
+        <li><a href="#catalog">Catálogo</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#why">Avaliações</a></li>
+        <li><a href="#how">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+  <h4>Atendimento</h4>
+  <a href="https://wa.me/555484421304" target="_blank" class="btn-link">
+    <button class="btn-whatsapp">
+      <i class="fa-brands fa-whatsapp"></i>
+      Falar no WhatsApp
+    </button>
+  </a>
+
+  <div class="footer-contatos">
+    <p class="footer-contato-title">Tire suas dúvidas:</p>
+
+    <a href="https://wa.me/5554984421304" target="_blank" class="footer-contato-item">
+      <i class="fa-brands fa-whatsapp"></i>
+      <div>
+        <span class="footer-contato-nome">André</span>
+        <span class="footer-contato-num">(54) 98442-1304</span>
+      </div>
+    </a>
+
+    <a href="https://wa.me/5554996180776" target="_blank" class="footer-contato-item">
+      <i class="fa-brands fa-whatsapp"></i>
+      <div>
+        <span class="footer-contato-nome">Liciane</span>
+        <span class="footer-contato-num">(54) 99618-0776</span>
+      </div>
+    </a>
+  </div>
+</div>
+  </div>
+  <div class="footer-bottom">© 2026 Cadeira Qbrada. Todos os direitos reservados.</div>
+</footer>
+
+<!-- WhatsApp FAB -->
+</body>
+</html>
+</body>
+</html>
