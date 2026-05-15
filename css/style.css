@@ -65,7 +65,7 @@
     /* MOBILE */
 @media (max-width: 768px) {
   .hero-bg {
-    background: url('../img/mobile.jpg') center/contain no-repeat;
+    background: url('../img/mobile.png') center/contain no-repeat;
     background-color: #0a0a0a;
     /* ESCONDE TEXTOS NO MOBILE */
 .hero-title,
@@ -1152,9 +1152,40 @@ nav.scrolled .nav-logo img {
 
   /* FUNDO MOBILE */
   .hero-bg{
-    background: url('../img/mobile.jpg') center top/cover no-repeat !important;
+    background: url('../img/mobile.png') center top/cover no-repeat !important;
     background-color: #e7c8e5;
     filter: none;
   }
 
+}
+.hero-benefits {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.2rem;
+  flex-wrap: wrap;
+}
+
+.hero-benefits-col {
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+}
+
+.hero-benefit-item {
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  padding: .45rem .9rem;
+  font-size: .88rem;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+/* mobile: empilha as colunas */
+@media (max-width: 768px) {
+  .hero-benefits { display: none !important; }
 }
